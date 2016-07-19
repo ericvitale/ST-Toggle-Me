@@ -194,6 +194,15 @@ def triggerLights() {
         	log("The sun is down!", "DEBUG")
         }
     }
+    
+    if(useTimeRange) {
+    	if(isBefore(currentDate, inputDateToDate(startTime)) && isAfter(currentDate, inputDateToDate(endTime))) {
+        	log("Time is outside of time range, ignoring triggers.", "DEBUG")
+            return
+        } else {
+        	log("Time is within time range!", "DEBUG")
+        }
+    }
 
     setSwitches()
     setDimmers(selectedDimmersLevel)
