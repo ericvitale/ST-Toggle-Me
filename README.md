@@ -5,7 +5,7 @@ SmartThings SmartApp for turning on and off switches, lights, dimmers, ... (freq
 If you have several scenarios you would like to control, just install the app from "My Apps" multiple times.
 
 ## Preferences
-*Switches* - Switches to toggle.
+###Switches - Switches to toggle.
 Dimmers - Dimmers to toggle.
 Dimmer Level - Level to set dimmers to.
 Color Temperature Lights - Color Temperature Lights to toggle.
