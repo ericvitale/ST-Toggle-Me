@@ -278,37 +278,15 @@ def setAllLights(onOff) {
 	log("Begin setAllLights(onOff)", "DEBUG")
     
     if(onOff.toLowerCase() == "off") {
-    	switches.each { it->
-     		it.off()
-        }
-        
-        dimmers.each { it->
-        	it.off()
-        }
-        
-        colorTemperatureLights.each { it->
-        	it.off()
-        }
-        
-        colorLights.each { it->
-        	it.off()
-        }
+    	switches?.off()
+        dimmers?.off()
+        colorTemperatureLights?.off()
+        colorLights?.off()
     } else {
-    	switches.each { it->
-     		it.on()
-        }
-        
-        dimmers.each { it->
-        	it.on()
-        }
-        
-        colorTemperatureLights.each { it->
-        	it.on()
-        }
-        
-        colorLights.each { it->
-        	it.on()
-        }
+    	switches?.on()
+        dimmers?.on()
+        colorTemperatureLights?.on()
+        colorLights?.on()
     }
 
     log("End setAllLights(onOff)", "DEBUG")
