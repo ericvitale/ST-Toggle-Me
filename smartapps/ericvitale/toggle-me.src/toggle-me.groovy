@@ -15,7 +15,7 @@
  *  for the specific language governing permissions and limitations under the License.
  *
  *
- *  You can find this smart app @ https://github.com/ericvitale/ST-Trigger-My-Lights
+ *  You can find this smart app @ https://github.com/ericvitale/ST-Toggle-Me
  *  You can find my other device handlers & SmartApps @ https://github.com/ericvitale
  *
  */
