@@ -5,22 +5,22 @@ SmartThings SmartApp for turning on and off switches, lights, dimmers, ... (freq
 If you have several scenarios you would like to control, just install the app from "My Apps" multiple times.
 
 ## Preferences
-###Switches - Switches to toggle.
-Dimmers - Dimmers to toggle.
-Dimmer Level - Level to set dimmers to.
-Color Temperature Lights - Color Temperature Lights to toggle.
-Color Temperature  - Color temperature to set color temperature lights to.
-Color Temperature Lights Level - Level to set color temperature lights to.
-Turn on for N seconds? - Seconds to turn lights on for.
-Turn off for N seconds? - Seconds to turn lights off for.
-Follow sunset / sunrise? - Only turn on / off when sun is down?
-Sunrise Offset - Offset for sunrise.
-Sunset Offset - Offset for sunset.
-Use Custom Time Range - Toggle for custom time range, only run during the following times.
-Start Time - Start time.
-End Time - End time.
-Rules Active - Run this program?
-Log Level - Logging Level.
+1. Switches - Switches to toggle.
+2. Dimmers - Dimmers to toggle.
+3. Dimmer Level - Level to set dimmers to.
+4. Color Temperature Lights - Color Temperature Lights to toggle.
+5. Color Temperature  - Color temperature to set color temperature lights to.
+6. Color Temperature Lights Level - Level to set color temperature lights to.
+7. Turn on for N seconds? - Seconds to turn lights on for.
+8. Turn off for N seconds? - Seconds to turn lights off for.
+9. Follow sunset / sunrise? - Only turn on / off when sun is down?
+10. Sunrise Offset - Offset for sunrise.
+11. Sunset Offset - Offset for sunset.
+12. Use Custom Time Range - Toggle for custom time range, only run during the following times.
+13. Start Time - Start time.
+14. End Time - End time.
+15. Rules Active - Run this program?
+16. Log Level - Logging Level.
 
 ## Installation via GitHub Integration
 1. Open SmartThings IDE in your web browser and log into your account.
