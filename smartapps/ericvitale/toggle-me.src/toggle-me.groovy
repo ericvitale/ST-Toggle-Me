@@ -2,6 +2,8 @@
  *  Toggle Me
  *  Version 1.0.0 - 07/11/16
  *
+ *  1.0.1 - 07/20/16
+ *   -- Bug Fix: Resolved issued with sunset / sunrise
  *  1.0.0 - 07/11/16
  *   -- Initial Release
  *
@@ -186,12 +188,12 @@ def triggerLights() {
     
     def currentDate = new Date()
     
-    if(useTheSun == true) {
-    	if(isBefore(currentDate, getSunrise(getOffsetString(sunriseOffset))) && isAfter(currentDate, getSunset(getOffsetString(sunsetOffset)))) {
-        	log("The sun is up, ignoring triggers.", "DEBUG")
-            return
+    if(useTheSun) {
+        if(isAfter(currentDate, getSunset(getOffsetString(sunsetOffset))) || isBefore(currentDate, getSunrise(getOffsetString(sunriseOffset)))) {
+        	log("The sun is down! OK!", "DEBUG")
         } else {
-        	log("The sun is down!", "DEBUG")
+        	log("Does not meet useTheSun criteria!", "DEBUG")
+            return
         }
     }
     
@@ -394,7 +396,7 @@ def getOffsetString(offsetMinutes) {
 	int minutes = Math.abs(offsetMinutes) % 60;
     def sign = (offsetMinutes >= 0) ? "" : "-"
 	def offsetString = "${sign}${hours.toString().padLeft(2, "0")}:${minutes.toString().padLeft(2, "0")}"
-	return offSetString
+	return offsetString
 }
 
 def inputDateToDate(val) {
