@@ -27,12 +27,13 @@ If you have several scenarios you would like to control, just install the app fr
 2. Click on the "My SmartApps" section in the navigation bar.
 3. Click on "Settings".
 4. Click "Add New Repository".
-5. Enter "ericvitale" as the namespace.
-6. Enter "ST-Toggle-Me" as the repository.
-7. Hit "Save".
-8. Select "Update from Repo" and select "ST-Toggle-Me".
-9. Select "toggle-me.groovy".
-10. Check "Publish" and hit "Execute".
+5. Enter "ericvitale" as the Default Namespace.
+6. Enter "ericvitale" as the Name.
+7. Enter "ST-Toggle-Me" as the repository.
+8. Hit "Save".
+9. Select "Update from Repo" and select "ST-Toggle-Me".
+10. Select "toggle-me.groovy".
+11. Check "Publish" and hit "Execute".
 
 ## Manual Installation (if that is your thing)
 1. Open SmartThings IDE in your web browser and log into your account.
